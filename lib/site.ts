@@ -12,7 +12,7 @@ export const siteConfig = {
     "Human-like AI Voice",
     "Scalable AI Agents"
   ],
-  contactEmails: ["hello@aisimplified.co.in", "hello@aisimplified.co.in"],
+  contactEmails: ["hello@aisimplified.co.in"],
   socialImage: "/opengraph-image"
 };
 

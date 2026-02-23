@@ -17,6 +17,7 @@ const statusCopy: Record<string, string> = {
 
 export default function ContactPage({ searchParams }: { searchParams?: { status?: string } }) {
   const status = searchParams?.status;
+  const emails = Array.from(new Set(siteConfig.contactEmails));
 
   return (
     <div className="space-y-12">
@@ -61,16 +62,15 @@ export default function ContactPage({ searchParams }: { searchParams?: { status?
           <div className="space-y-4">
             <div className="surface-card rounded-2xl p-6">
               <h3 className="text-xl font-semibold">Contact Emails</h3>
-              <p className="mt-3 text-sm text-slate-600 dark:text-slate-300">
-                <a href={`mailto:${siteConfig.contactEmails[0]}`} className="text-ai-700 underline-offset-4 hover:underline dark:text-ai-300">
-                  {siteConfig.contactEmails[0]}
-                </a>
-              </p>
-              <p className="text-sm text-slate-600 dark:text-slate-300">
-                <a href={`mailto:${siteConfig.contactEmails[1]}`} className="text-ai-700 underline-offset-4 hover:underline dark:text-ai-300">
-                  {siteConfig.contactEmails[1]}
-                </a>
-              </p>
+              <div className="mt-3 space-y-1">
+                {emails.map((email) => (
+                  <p key={email} className="text-sm text-slate-600 dark:text-slate-300">
+                    <a href={`mailto:${email}`} className="text-ai-700 underline-offset-4 hover:underline dark:text-ai-300">
+                      {email}
+                    </a>
+                  </p>
+                ))}
+              </div>
             </div>
             <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center text-sm text-slate-500 dark:border-slate-700 dark:bg-slate-900">
               Google Map Placeholder

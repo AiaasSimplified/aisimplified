@@ -11,6 +11,8 @@ const legal = [
 ];
 
 export function Footer() {
+  const emails = Array.from(new Set(siteConfig.contactEmails));
+
   return (
     <footer className="border-t border-slate-200 bg-white/70 py-10 dark:border-slate-800 dark:bg-slate-950/60">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 sm:px-6 lg:px-8">
@@ -20,8 +22,11 @@ export function Footer() {
             <p className="text-sm text-slate-600 dark:text-slate-300">AI Agents & Voice Agent Platform for enterprise scale.</p>
           </div>
           <div className="flex flex-wrap gap-3 text-sm text-slate-600 dark:text-slate-300">
-            <a href={`mailto:${siteConfig.contactEmails[0]}`}>{siteConfig.contactEmails[0]}</a>
-            <a href={`mailto:${siteConfig.contactEmails[1]}`}>{siteConfig.contactEmails[1]}</a>
+            {emails.map((email) => (
+              <a key={email} href={`mailto:${email}`}>
+                {email}
+              </a>
+            ))}
           </div>
         </div>
         <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-600 dark:text-slate-300">
