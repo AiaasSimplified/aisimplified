@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
       <h2>7. Your Rights</h2>
       <p>Users may request access, correction, deletion, portability, or objection to specific processing.</p>
       <h2>8. Contact</h2>
-      <p>For privacy requests: alok@aisimplified.co.in</p>
+      <p>For privacy requests: hello@aisimplified.co.in</p>
     </LegalTemplate>
   );
 }

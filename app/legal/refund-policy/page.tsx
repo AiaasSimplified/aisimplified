@@ -12,7 +12,7 @@ export default function RefundPolicyPage() {
       <h2>2. Enterprise Contracts</h2>
       <p>Refunds, credits, and service remedies are governed by executed MSA/SOW terms.</p>
       <h2>3. Billing Disputes</h2>
-      <p>Billing disputes should be raised within 30 days of invoice date at alok@aisimplified.co.in.</p>
+      <p>Billing disputes should be raised within 30 days of invoice date at hello@aisimplified.co.in.</p>
     </LegalTemplate>
   );
 }
