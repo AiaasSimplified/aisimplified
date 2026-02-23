@@ -1,0 +1,11 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="220" height="220" rx="28" fill="#F8FAFC"/>
+  <rect x="70" y="38" width="80" height="80" rx="18" fill="url(#grad)"/>
+  <text x="110" y="164" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#0F172A">AISimplified</text>
+  <defs>
+    <linearGradient id="grad" x1="70" y1="38" x2="150" y2="118" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3C63F3"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+</svg>

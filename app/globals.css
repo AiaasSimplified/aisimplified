@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg: 248 250 252;
+  --surface: 255 255 255;
+  --text: 15 23 42;
+  --muted: 71 85 105;
+  --border: 226 232 240;
+}
+
+.dark {
+  color-scheme: dark;
+  --bg: 2 6 23;
+  --surface: 15 23 42;
+  --text: 226 232 240;
+  --muted: 148 163 184;
+  --border: 51 65 85;
+}
+
+* {
+  border-color: rgb(var(--border));
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background: rgb(var(--bg));
+  color: rgb(var(--text));
+  font-feature-settings: "ss01" on, "cv01" on;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #273985 0%, #3c63f3 48%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.surface-card {
+  background: rgb(var(--surface));
+  border: 1px solid rgb(var(--border));
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.06);
+}

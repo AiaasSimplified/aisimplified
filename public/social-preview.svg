@@ -1,0 +1,15 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#060D1F"/>
+  <circle cx="1040" cy="-40" r="280" fill="#3C63F3" fill-opacity="0.22"/>
+  <circle cx="140" cy="80" r="180" fill="#06B6D4" fill-opacity="0.14"/>
+  <rect x="90" y="80" width="110" height="110" rx="24" fill="url(#g)"/>
+  <text x="230" y="154" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="700" fill="#E2E8F0">AISimplified</text>
+  <text x="90" y="300" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800" fill="#ffffff">AI Voice Agent Platform</text>
+  <text x="90" y="378" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="500" fill="#C7D2FE">Build Intelligent AI Voice Agents. Scale Without Limits.</text>
+  <defs>
+    <linearGradient id="g" x1="90" y1="80" x2="200" y2="190" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3C63F3"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+</svg>
